@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "519196440737",
+    "firebase_url": "https://self-service-kiosh-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "self-service-kiosh",
+    "storage_bucket": "self-service-kiosh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:519196440737:android:da0b3703d3a5bd8b3698e0",
+        "android_client_info": {
+          "package_name": "com.mangotree.selfservicekiosk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBba-UQEjrrFq5vbnkGZ15k_nnXE85gbt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

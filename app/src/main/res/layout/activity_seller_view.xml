@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerViewActivity"
+    android:background="#F4D3AC">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="30dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/order_list_image"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/order_list_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_layout_card_view"
+        tools:listitem="@layout/item_layout_order_list"
+        android:layout_above="@id/below_layout_card_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/below_layout_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#CFDB81">
+
+        <TextView
+            android:id="@+id/item_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ITEM ON LIST: 0"
+            android:textStyle="bold|italic"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
