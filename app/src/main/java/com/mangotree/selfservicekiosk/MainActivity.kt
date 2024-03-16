@@ -16,10 +16,12 @@ class MainActivity : AppCompatActivity() {
 
         binding.buyerCardView.setOnClickListener {
             startActivity(Intent(this, OrderViewActivity::class.java))
+            finish()
         }
 
         binding.sellerCardView.setOnClickListener {
             startActivity(Intent(this, SellerViewActivity::class.java))
+            finish()
         }
 
     }
