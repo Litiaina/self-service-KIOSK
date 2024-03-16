@@ -677,88 +677,93 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(longganisaPrice.toDouble())
         }
 
+        binding.cancelImageButton.setOnClickListener {
+            finish()
+        }
+
         binding.checkoutImageButton.setOnClickListener {
             val itemCountArray = mutableListOf<Int>()
             val itemNameArray = mutableListOf<String>()
 
-            itemCountArray.add(sisilogCount);
-            itemCountArray.add(steamedFriedRiceCount);
-            itemCountArray.add(porkchopCount);
-            itemCountArray.add(burgerSteakCount);
-            itemCountArray.add(chickenStripsCount);
-            itemCountArray.add(siomaiRiceCount);
-            itemCountArray.add(lumpiaCount);
-            itemCountArray.add(bbqRiceCount);
-            itemCountArray.add(tocinoWithEggCount);
-            itemCountArray.add(tocinoWithoutEggCount);
-            itemCountArray.add(chickenNuggetsCount);
-            itemCountArray.add(javaRiceCount);
-            itemCountArray.add(crispyBurgerCount);
+            itemCountArray.add(sisilogCount)
+            itemCountArray.add(steamedFriedRiceCount)
+            itemCountArray.add(porkchopCount)
+            itemCountArray.add(burgerSteakCount)
+            itemCountArray.add(chickenStripsCount)
+            itemCountArray.add(siomaiRiceCount)
+            itemCountArray.add(lumpiaCount)
+            itemCountArray.add(bbqRiceCount)
+            itemCountArray.add(tocinoWithEggCount)
+            itemCountArray.add(tocinoWithoutEggCount)
+            itemCountArray.add(chickenNuggetsCount)
+            itemCountArray.add(javaRiceCount)
+            itemCountArray.add(crispyBurgerCount)
 
-            itemCountArray.add(c2SmallCount);
-            itemCountArray.add(c2MediumCount);
-            itemCountArray.add(gulamanSmallCount);
-            itemCountArray.add(gulamanMediumCount);
-            itemCountArray.add(coffeeJellySmallCount);
-            itemCountArray.add(coffeeJellyMediumCount);
-            itemCountArray.add(mangoTapiocaSmallCount);
-            itemCountArray.add(mangoTapiocaMediumCount);
-            itemCountArray.add(natureSpringSmallCount);
-            itemCountArray.add(natureSpringMediumCount);
-            itemCountArray.add(icedCoffeeCount);
-            itemCountArray.add(icedTeaCount);
-            itemCountArray.add(vitamilkOriginalCount);
-            itemCountArray.add(vitamilkChocolateCount);
-            itemCountArray.add(vitamilkStrawberryCount);
+            itemCountArray.add(c2SmallCount)
+            itemCountArray.add(c2MediumCount)
+            itemCountArray.add(gulamanSmallCount)
+            itemCountArray.add(gulamanMediumCount)
+            itemCountArray.add(coffeeJellySmallCount)
+            itemCountArray.add(coffeeJellyMediumCount)
+            itemCountArray.add(mangoTapiocaSmallCount)
+            itemCountArray.add(mangoTapiocaMediumCount)
+            itemCountArray.add(natureSpringSmallCount)
+            itemCountArray.add(natureSpringMediumCount)
+            itemCountArray.add(icedCoffeeCount)
+            itemCountArray.add(icedTeaCount)
+            itemCountArray.add(vitamilkOriginalCount)
+            itemCountArray.add(vitamilkChocolateCount)
+            itemCountArray.add(vitamilkStrawberryCount)
 
-            itemCountArray.add(luncheonMeatCount);
-            itemCountArray.add(nuggetsCount);
-            itemCountArray.add(kwekKwekCount);
-            itemCountArray.add(friesSmallCount);
-            itemCountArray.add(friesMediumCount);
-            itemCountArray.add(friesLargeCount);
-            itemCountArray.add(longganisaCount);
+            itemCountArray.add(luncheonMeatCount)
+            itemCountArray.add(nuggetsCount)
+            itemCountArray.add(kwekKwekCount)
+            itemCountArray.add(friesSmallCount)
+            itemCountArray.add(friesMediumCount)
+            itemCountArray.add(friesLargeCount)
+            itemCountArray.add(longganisaCount)
 
-            itemNameArray.add(sisilogName);
-            itemNameArray.add(steamedFriedRiceName);
-            itemNameArray.add(porkchopName);
-            itemNameArray.add(burgerSteakName);
-            itemNameArray.add(chickenStripsName);
-            itemNameArray.add(siomaiName);
-            itemNameArray.add(lumpiaName);
-            itemNameArray.add(bbqRiceName);
-            itemNameArray.add(tocinoWithEggName);
-            itemNameArray.add(tocinoWithoutEggName);
-            itemNameArray.add(chickenNuggetsName);
-            itemNameArray.add(javaRiceName);
-            itemNameArray.add(crispyBurgerName);
+            itemNameArray.add(sisilogName)
+            itemNameArray.add(steamedFriedRiceName)
+            itemNameArray.add(porkchopName)
+            itemNameArray.add(burgerSteakName)
+            itemNameArray.add(chickenStripsName)
+            itemNameArray.add(siomaiName)
+            itemNameArray.add(lumpiaName)
+            itemNameArray.add(bbqRiceName)
+            itemNameArray.add(tocinoWithEggName)
+            itemNameArray.add(tocinoWithoutEggName)
+            itemNameArray.add(chickenNuggetsName)
+            itemNameArray.add(javaRiceName)
+            itemNameArray.add(crispyBurgerName)
 
-            itemNameArray.add(c2SmallName);
-            itemNameArray.add(c2MediumName);
-            itemNameArray.add(gulamanSmallName);
-            itemNameArray.add(gulamanMediumName);
-            itemNameArray.add(coffeeJellySmallName);
-            itemNameArray.add(coffeeJellyMediumName);
-            itemNameArray.add(mangoTapiocaSmallName);
-            itemNameArray.add(mangoTapiocaMediumName);
-            itemNameArray.add(natureSpringSmallName);
-            itemNameArray.add(natureSpringMediumName);
-            itemNameArray.add(icedCoffeeName);
-            itemNameArray.add(icedTeaName);
-            itemNameArray.add(vitamilkOriginalName);
-            itemNameArray.add(vitamilkChocolateName);
-            itemNameArray.add(vitamilkStrawberryName);
+            itemNameArray.add(c2SmallName)
+            itemNameArray.add(c2MediumName)
+            itemNameArray.add(gulamanSmallName)
+            itemNameArray.add(gulamanMediumName)
+            itemNameArray.add(coffeeJellySmallName)
+            itemNameArray.add(coffeeJellyMediumName)
+            itemNameArray.add(mangoTapiocaSmallName)
+            itemNameArray.add(mangoTapiocaMediumName)
+            itemNameArray.add(natureSpringSmallName)
+            itemNameArray.add(natureSpringMediumName)
+            itemNameArray.add(icedCoffeeName)
+            itemNameArray.add(icedTeaName)
+            itemNameArray.add(vitamilkOriginalName)
+            itemNameArray.add(vitamilkChocolateName)
+            itemNameArray.add(vitamilkStrawberryName)
 
-            itemNameArray.add(luncheonMeatName);
-            itemNameArray.add(nuggetsName);
-            itemNameArray.add(kwekKwekName);
-            itemNameArray.add(friesSmallName);
-            itemNameArray.add(friesMediumName);
-            itemNameArray.add(friesLargeName);
-            itemNameArray.add(longganisaName);
+            itemNameArray.add(luncheonMeatName)
+            itemNameArray.add(nuggetsName)
+            itemNameArray.add(kwekKwekName)
+            itemNameArray.add(friesSmallName)
+            itemNameArray.add(friesMediumName)
+            itemNameArray.add(friesLargeName)
+            itemNameArray.add(longganisaName)
 
             processOrders(itemCountArray, itemNameArray)
             startActivity(Intent(this@OrderListViewActivity, CheckoutActivity::class.java))
+            finish()
         }
 
     }
@@ -775,7 +780,7 @@ class OrderListViewActivity : AppCompatActivity() {
         binding.totalAmountTextView.text = "TOTAL AMOUNT: $totalAmount php"
     }
 
-    fun processOrders(counts: List<Int>, names: List<String>): List<String> {
+    private fun processOrders(counts: List<Int>, names: List<String>): List<String> {
         for (index in counts.indices) {
             if (counts[index] != 0) {
                 orderList.add("${names[index]}: ${counts[index]}")

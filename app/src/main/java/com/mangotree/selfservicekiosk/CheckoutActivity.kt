@@ -32,7 +32,7 @@ class CheckoutActivity : AppCompatActivity() {
         stringBuilder = java.lang.StringBuilder()
 
         for (data in OrderListViewActivity.orderList){
-            stringBuilder?.append("$data\n")
+            stringBuilder?.append("-$data\n")
         }
 
         binding.totalAmountTextView.text = "TOTAL AMOUNT: ${OrderListViewActivity.totalAmount} php"
@@ -40,9 +40,6 @@ class CheckoutActivity : AppCompatActivity() {
         binding.outputTextView.text = stringBuilder.toString()
 
         binding.placeOrderImageButton.setOnClickListener {
-            if (isDestroyed) {
-                return@setOnClickListener
-            }
             database?.let { db ->
                 db.getReference("Orders").orderByChild("orderNumber").equalTo(random.toString())
                     .addListenerForSingleValueEvent(object : ValueEventListener {
@@ -60,8 +57,12 @@ class CheckoutActivity : AppCompatActivity() {
                         }
                         override fun onCancelled(error: DatabaseError) {}
                     })
-
             }
+        }
+
+        binding.cancelImageButton.setOnClickListener {
+            startActivity(Intent(this@CheckoutActivity, OrderListViewActivity::class.java))
+            finish()
         }
     }
 
