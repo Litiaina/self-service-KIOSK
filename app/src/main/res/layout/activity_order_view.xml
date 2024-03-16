@@ -8,8 +8,8 @@
     android:background="#F4D3AC">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:src="@drawable/landing_screen_image"
         android:scaleType="fitCenter"/>
 

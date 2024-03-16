@@ -1937,7 +1937,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/c2_small_price_image"/>
+                                    android:src="@drawable/c2_medium_price_image"/>
 
                             </androidx.cardview.widget.CardView>
 
@@ -2189,7 +2189,7 @@
                                 <ImageView
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/c2_small_price_image"/>
+                                    android:src="@drawable/c2_medium_price_image"/>
 
                             </androidx.cardview.widget.CardView>
 
@@ -3655,7 +3655,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_centerInParent="true"
                     android:src="@drawable/snacks_header_image" />
 
             </RelativeLayout>
