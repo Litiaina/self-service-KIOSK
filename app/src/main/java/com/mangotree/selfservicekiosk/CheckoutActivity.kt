@@ -27,7 +27,7 @@ class CheckoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityCheckoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val random = (0..999).random()
+        val random = (0..500).random()
         database = FirebaseDatabase.getInstance()
         stringBuilder = java.lang.StringBuilder()
 
