@@ -35,7 +35,6 @@ class SellerViewActivity : AppCompatActivity() {
                 val adapter = OrdersAdapter(dataList, db)
                 binding.orderListRecyclerView.adapter = adapter
                 binding.itemCountTextView.text = "ITEM ON LIST: ${adapter.itemCount}"
-
             }
 
             override fun onCancelled(error: DatabaseError) {

@@ -780,14 +780,12 @@ class OrderListViewActivity : AppCompatActivity() {
         binding.totalAmountTextView.text = "TOTAL AMOUNT: $totalAmount php"
     }
 
-    private fun processOrders(counts: List<Int>, names: List<String>): List<String> {
+    private fun processOrders(counts: List<Int>, names: List<String>){
         for (index in counts.indices) {
             if (counts[index] != 0) {
                 orderList.add("${names[index]}: ${counts[index]}")
             }
         }
-
-        return orderList
     }
 
 }
