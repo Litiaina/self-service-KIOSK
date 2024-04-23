@@ -15,30 +15,30 @@ class OrderListViewActivity : AppCompatActivity() {
         var orderList = mutableListOf<String>()
     }
 
-    var sisilogName = "Sisilog"
+    var sisilogName = "Sisiglog"
     var steamedFriedRiceName = "Steamed Fried Rice"
     var porkchopName = "Porkchop"
-    var burgerSteakName = "Burger Steak"
-    var chickenStripsName = "Chicken Strips"
-    var siomaiName = "Siomai"
-    var lumpiaName = "Lumpia"
-    var bbqRiceName = "Bbq Rice"
+    var chickenFilletName = "Chicken Fillet"
+    var porkKatsudonName = "Pork Katsudon"
+    var siomaiName = "Siomai Rice"
+    var crispyChickenName = "Crispy Chicken"
+    var longsilogName = "Longsilog"
     var tocinoWithEggName = "Tocino With Egg"
-    var tocinoWithoutEggName = "Tocino Without Egg"
-    var chickenNuggetsName = "Chicken Nuggets"
-    var javaRiceName = "Java Rice"
-    var crispyBurgerName = "Crispy Burger"
-    var c2SmallName = "C2 Small"
-    var c2MediumName = "C2 Medium"
-    var gulamanSmallName = "Gulaman Small"
+    var tunasilogName = "Tunasilog"
+    var cornsilogName = "Cornsilog"
+    var tapsilogName = "Tapsilog"
+    var hamsilogName = "Hamsilog"
+    var miloRegularName = "Milo Regular"
+    var miloLargeName = "Milo Large"
+    var blueLemonadeSmallName = "Blue Lemonade Small"
     var gulamanMediumName = "Gulaman Medium"
-    var coffeeJellySmallName = "Coffee Jelly Small"
-    var coffeeJellyMediumName = "Coffee Jelly Medium"
+    var blueLemonadeMediumName = "Blue Lemonade Medium"
+    var coffeeJellyMediumName = "Blue Lemonade Large"
     var mangoTapiocaSmallName = "Mango Tapioca Small"
     var mangoTapiocaMediumName = "Mango Tapioca Medium"
     var natureSpringSmallName = "Nature Spring Small"
     var natureSpringMediumName = "Nature Spring Medium"
-    var icedCoffeeName = "Iced Coffee"
+    var nescafeRegularName = "Nescafe Regular"
     var icedTeaName = "Iced Tea"
     var vitamilkOriginalName = "Vitamilk Original"
     var vitamilkChocolateName = "Vitamilk Chocolate"
@@ -46,9 +46,9 @@ class OrderListViewActivity : AppCompatActivity() {
     var luncheonMeatName = "Luncheon Meat"
     var nuggetsName = "Nuggets"
     var kwekKwekName = "Kwek-Kwek"
-    var friesSmallName = "Fries Small"
-    var friesMediumName = "Fries Medium"
-    var friesLargeName = "Fries Large"
+    var friesSmallName = "Regular Fries"
+    var friesMediumName = "Large Fries"
+    var friesLargeName = "Jumbo Fries"
     var longganisaName = "Longganisa"
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -57,29 +57,29 @@ class OrderListViewActivity : AppCompatActivity() {
     var sisilogCount = 0
     var steamedFriedRiceCount = 0
     var porkchopCount = 0
-    var burgerSteakCount = 0
-    var chickenStripsCount = 0
+    var chickenFilletCount = 0
+    var porkKatsudonCount = 0
     var siomaiRiceCount = 0
-    var lumpiaCount = 0
-    var bbqRiceCount = 0
+    var crispyChickenCount = 0
+    var longsilogCount = 0
     var tocinoWithEggCount = 0
-    var tocinoWithoutEggCount = 0
-    var chickenNuggetsCount = 0
-    var javaRiceCount = 0
-    var crispyBurgerCount = 0
+    var tunasilogCount = 0
+    var cornsilogCount = 0
+    var tapsilogCount = 0
+    var hamsilogCount = 0
 
     //DRINKS COUNT
-    var c2SmallCount = 0
-    var c2MediumCount = 0
-    var gulamanSmallCount = 0
+    var miloRegularCount = 0
+    var miloLargeCount = 0
+    var blueLemonadeSmallCount = 0
     var gulamanMediumCount = 0
-    var coffeeJellySmallCount = 0
-    var coffeeJellyMediumCount = 0
+    var blueLemonadeMediumCount = 0
+    var blueLemonadeLargeCount = 0
     var mangoTapiocaSmallCount = 0
     var mangoTapiocaMediumCount = 0
     var natureSpringSmallCount = 0
     var natureSpringMediumCount = 0
-    var icedCoffeeCount = 0
+    var nescafeRegularCount = 0
     var icedTeaCount = 0
     var vitamilkOriginalCount = 0
     var vitamilkChocolateCount = 0
@@ -97,32 +97,32 @@ class OrderListViewActivity : AppCompatActivity() {
     ///////////////////////////////////////////////////////////////////////////////////////////////
 
     //RICE MEALS PRICES
-    val sisilogPrice = 60
+    val sisilogPrice = 65
     val steamedFriedRicePrice = 55
-    val porkchopPrice = 60
-    val burgerSteakPrice = 60
-    val chickenStripsPrice = 60
+    val porkchopPrice = 65
+    val chickenFilletPrice = 60
+    val porkKatsudonPrice = 60
     val siomaiRicePrice = 45
-    val lumpiaPrice = 45
-    val bbqRicePrice = 55
+    val crispyChickenPrice = 60
+    val longsilogPrice = 65
     val tocinoWithEggPrice = 65
-    val tocinoWithoutEggPrice = 55
-    val chickenNuggetsPrice = 45
-    val javaRicePrice = 50
-    val crispyBurgerPrice = 45
+    val tunasilogPrice = 65
+    val cornsilogPrice = 65
+    val tapsilogPrice = 65
+    val hamsilogPrice = 65
 
     //DRINKS PRICES
-    val c2SmallPrice = 20
-    val c2MediumPrice = 35
-    val gulamanSmallPrice = 25
+    val miloRegularPrice = 30
+    val miloLargePrice = 40
+    val blueLemonadeSmallPrice = 20
     val gulamanMediumPrice = 35
-    val coffeeJellySmallPrice = 25
-    val coffeeJellyMediumPrice = 35
+    val blueLemonadeMediumPrice = 25
+    val blueLemonadeLargePrice = 30
     val mangoTapiocaSmallPrice = 25
     val mangoTapiocaMediumPrice = 35
     val natureSpringSmallPrice = 20
-    val natureSpringMediumPrice = 25
-    val icedCoffeePrice = 25
+    val natureSpringMediumPrice = 30
+    val nescafeRegularPrice = 30
     val icedTeaPrice = 25
     val vitamilkOriginalPrice = 35
     val vitamilkChocolatePrice = 35
@@ -132,9 +132,9 @@ class OrderListViewActivity : AppCompatActivity() {
     val luncheonMeatPrice = 20
     val nuggetsPrice = 10
     val kwekKwekPrice = 25
-    val friesSmallPrice = 35
-    val friesMediumPrice = 45
-    val friesLargePrice = 60
+    val friesSmallPrice = 40
+    val friesMediumPrice = 60
+    val friesLargePrice = 75
     val longganisaPrice = 15
 
     /////////////////////////////////////////////////////////////////////////////////////////////
@@ -166,11 +166,11 @@ class OrderListViewActivity : AppCompatActivity() {
             addDisplayTotalAmount(porkchopPrice.toDouble())
         }
 
-        binding.burgerstakePlusButton.setOnClickListener {
-            burgerSteakCount++
-            binding.burgerstakeCountTextView.text = "$burgerSteakCount"
+        binding.chickenFilletPlusButton.setOnClickListener {
+            chickenFilletCount++
+            binding.burgerstakeCountTextView.text = "$chickenFilletCount"
 
-            addDisplayTotalAmount(burgerSteakPrice.toDouble())
+            addDisplayTotalAmount(chickenFilletPrice.toDouble())
         }
 
         binding.siomaiRicePlusButton.setOnClickListener {
@@ -180,23 +180,25 @@ class OrderListViewActivity : AppCompatActivity() {
             addDisplayTotalAmount(siomaiRicePrice.toDouble())
         }
 
-        binding.chickenStripsPlusButton.setOnClickListener {
-            chickenStripsCount++
-            binding.chickenStripsCountTextView.text = "$chickenStripsCount"
+        binding.porkKatsudonPlusButton.setOnClickListener {
+            porkKatsudonCount++
+            binding.porkKatsudonCountTextView.text = "$porkKatsudonCount"
+
+            addDisplayTotalAmount(porkKatsudonPrice.toDouble())
         }
 
-        binding.lumpiaPlusButton.setOnClickListener {
-            lumpiaCount++
-            binding.lumpiaCountTextView.text = "$lumpiaCount"
+        binding.crispyChickenPlusButton.setOnClickListener {
+            crispyChickenCount++
+            binding.crispyChickenCountTextView.text = "$crispyChickenCount"
 
-            addDisplayTotalAmount(lumpiaPrice.toDouble())
+            addDisplayTotalAmount(crispyChickenPrice.toDouble())
         }
 
-        binding.bbqRicePlusButton.setOnClickListener {
-            bbqRiceCount++
-            binding.bbqRiceCountTextView.text = "$bbqRiceCount"
+        binding.longsilogPlusButton.setOnClickListener {
+            longsilogCount++
+            binding.longsilogCountTextView.text = "$longsilogCount"
 
-            addDisplayTotalAmount(bbqRicePrice.toDouble())
+            addDisplayTotalAmount(longsilogPrice.toDouble())
         }
 
         binding.tocinoWithEggPlusButton.setOnClickListener {
@@ -206,55 +208,55 @@ class OrderListViewActivity : AppCompatActivity() {
             addDisplayTotalAmount(tocinoWithEggPrice.toDouble())
         }
 
-        binding.tocinoWithoutEggPlusButton.setOnClickListener {
-            tocinoWithoutEggCount++
-            binding.tocinoWithoutEggCountTextView.text = "$tocinoWithoutEggCount"
+        binding.tunasilogPlusButton.setOnClickListener {
+            tunasilogCount++
+            binding.tunasilogCountTextView.text = "$tunasilogCount"
 
-            addDisplayTotalAmount(tocinoWithoutEggPrice.toDouble())
+            addDisplayTotalAmount(tunasilogPrice.toDouble())
         }
 
-        binding.chickenNuggetsPlusButton.setOnClickListener {
-            chickenNuggetsCount++
-            binding.chickenNuggetsCountTextView.text = "$chickenNuggetsCount"
+        binding.cornsilogPlusButton.setOnClickListener {
+            cornsilogCount++
+            binding.cornsilogCountTextView.text = "$cornsilogCount"
 
-            addDisplayTotalAmount(chickenNuggetsPrice.toDouble())
+            addDisplayTotalAmount(cornsilogPrice.toDouble())
         }
 
-        binding.javaRicePlusButton.setOnClickListener {
-            javaRiceCount++
-            binding.javaRiceCountTextView.text = "$javaRiceCount"
+        binding.tapsilogPlusButton.setOnClickListener {
+            tapsilogCount++
+            binding.tapsilogCountTextView.text = "$tapsilogCount"
 
-            addDisplayTotalAmount(javaRicePrice.toDouble())
+            addDisplayTotalAmount(tapsilogPrice.toDouble())
         }
 
-        binding.crispyBurgerPlusButton.setOnClickListener {
-            crispyBurgerCount++
-            binding.crispyBurgerCountTextView.text = "$crispyBurgerCount"
+        binding.hamsilogPlusButton.setOnClickListener {
+            hamsilogCount++
+            binding.hamsilogCountTextView.text = "$hamsilogCount"
 
-            addDisplayTotalAmount(crispyBurgerPrice.toDouble())
+            addDisplayTotalAmount(hamsilogPrice.toDouble())
         }
 
         //DRINKS
 
-        binding.c2SmallPlusButton.setOnClickListener {
-            c2SmallCount++
-            binding.c2SmallCountTextView.text = "$c2SmallCount"
+        binding.miloRegularPlusButton.setOnClickListener {
+            miloRegularCount++
+            binding.miloRegularCountTextView.text = "$miloRegularCount"
 
-            addDisplayTotalAmount(c2SmallPrice.toDouble())
+            addDisplayTotalAmount(miloRegularPrice.toDouble())
         }
 
-        binding.c2MediumPlusButton.setOnClickListener {
-            c2MediumCount++
-            binding.c2MediumCountTextView.text = "$c2MediumCount"
+        binding.miloLargePlusButton.setOnClickListener {
+            miloLargeCount++
+            binding.miloLargeCountTextView.text = "$miloLargeCount"
 
-            addDisplayTotalAmount(c2MediumPrice.toDouble())
+            addDisplayTotalAmount(miloLargePrice.toDouble())
         }
 
-        binding.gulamanPlusButton.setOnClickListener {
-            gulamanSmallCount++
-            binding.gulamanCountTextView.text = "$gulamanSmallCount"
+        binding.blueLemonadeSmallPlusButton.setOnClickListener {
+            blueLemonadeSmallCount++
+            binding.blueLemonadeSmallCountTextView.text = "$blueLemonadeSmallCount"
 
-            addDisplayTotalAmount(gulamanSmallPrice.toDouble())
+            addDisplayTotalAmount(blueLemonadeSmallCount.toDouble())
         }
 
         binding.gulamanMediumPlusButton.setOnClickListener {
@@ -264,18 +266,18 @@ class OrderListViewActivity : AppCompatActivity() {
             addDisplayTotalAmount(gulamanMediumPrice.toDouble())
         }
 
-        binding.coffeeJellySmallPlusButton.setOnClickListener {
-            coffeeJellySmallCount++
-            binding.coffeeJellySmallCountTextView.text = "$coffeeJellySmallCount"
+        binding.blueLemonadeMediumPlusButton.setOnClickListener {
+            blueLemonadeMediumCount++
+            binding.blueLemonadeMediumCountTextView.text = "$blueLemonadeMediumCount"
 
-            addDisplayTotalAmount(coffeeJellySmallPrice.toDouble())
+            addDisplayTotalAmount(blueLemonadeMediumPrice.toDouble())
         }
 
-        binding.coffeeJellyMediumPlusButton.setOnClickListener {
-            coffeeJellyMediumCount++
-            binding.coffeeJellyMediumCountTextView.text = "$coffeeJellyMediumCount"
+        binding.blueLemonadeLargePlusButton.setOnClickListener {
+            blueLemonadeLargeCount++
+            binding.blueLemonadeLargeCountTextView.text = "$blueLemonadeLargeCount"
 
-            addDisplayTotalAmount(coffeeJellyMediumPrice.toDouble())
+            addDisplayTotalAmount(blueLemonadeLargePrice.toDouble())
         }
 
         binding.mangoTapiocaSmallPlusButton.setOnClickListener {
@@ -306,11 +308,11 @@ class OrderListViewActivity : AppCompatActivity() {
             addDisplayTotalAmount(natureSpringMediumPrice.toDouble())
         }
 
-        binding.iceCoffeePlusButton.setOnClickListener {
-            icedCoffeeCount++
-            binding.iceCoffeeCountTextView.text = "$icedCoffeeCount"
+        binding.nescafeRegularPlusButton.setOnClickListener {
+            nescafeRegularCount++
+            binding.nescafeRegularCountTextView.text = "$nescafeRegularCount"
 
-            addDisplayTotalAmount(icedCoffeePrice.toDouble())
+            addDisplayTotalAmount(nescafeRegularPrice.toDouble())
         }
 
         binding.icedTeaSmallPlusButton.setOnClickListener {
@@ -417,12 +419,12 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(porkchopPrice.toDouble())
         }
 
-        binding.burgerstakeMinusButton.setOnClickListener {
-            if(burgerSteakCount == 0) return@setOnClickListener
-            burgerSteakCount--
-            binding.burgerstakeCountTextView.text = "$burgerSteakCount"
+        binding.chickenFilletMinusButton.setOnClickListener {
+            if(chickenFilletCount == 0) return@setOnClickListener
+            chickenFilletCount--
+            binding.burgerstakeCountTextView.text = "$chickenFilletCount"
 
-            minusDisplayTotalAmount(burgerSteakCount.toDouble())
+            minusDisplayTotalAmount(chickenFilletCount.toDouble())
         }
 
         binding.siomaiRiceMinusButton.setOnClickListener {
@@ -433,28 +435,28 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(siomaiRicePrice.toDouble())
         }
 
-        binding.chickenStripsMinusButton.setOnClickListener {
-            if(chickenStripsCount == 0) return@setOnClickListener
-            chickenStripsCount--
-            binding.chickenStripsCountTextView.text = "$chickenStripsCount"
+        binding.porkKatsudonMinusButton.setOnClickListener {
+            if(porkKatsudonCount == 0) return@setOnClickListener
+            porkKatsudonCount--
+            binding.porkKatsudonCountTextView.text = "$porkKatsudonCount"
 
-            minusDisplayTotalAmount(chickenStripsPrice.toDouble())
+            minusDisplayTotalAmount(porkKatsudonPrice.toDouble())
         }
 
-        binding.lumpiaMinusButton.setOnClickListener {
-            if(lumpiaCount == 0) return@setOnClickListener
-            lumpiaCount--
-            binding.lumpiaCountTextView.text = "$lumpiaCount"
+        binding.crispyChickenMinusButton.setOnClickListener {
+            if(crispyChickenCount == 0) return@setOnClickListener
+            crispyChickenCount--
+            binding.crispyChickenCountTextView.text = "$crispyChickenCount"
 
-            minusDisplayTotalAmount(lumpiaPrice.toDouble())
+            minusDisplayTotalAmount(crispyChickenPrice.toDouble())
         }
 
-        binding.bbqRiceMinusButton.setOnClickListener {
-            if(bbqRiceCount == 0) return@setOnClickListener
-            bbqRiceCount--
-            binding.bbqRiceCountTextView.text = "$bbqRiceCount"
+        binding.longsilogMinusButton.setOnClickListener {
+            if(longsilogCount == 0) return@setOnClickListener
+            longsilogCount--
+            binding.longsilogCountTextView.text = "$longsilogCount"
 
-            minusDisplayTotalAmount(bbqRicePrice.toDouble())
+            minusDisplayTotalAmount(longsilogPrice.toDouble())
         }
 
         binding.tocinoWithEggMinusButton.setOnClickListener {
@@ -465,62 +467,62 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(tocinoWithEggPrice.toDouble())
         }
 
-        binding.tocinoWithoutEggMinusButton.setOnClickListener {
-            if(tocinoWithoutEggCount == 0) return@setOnClickListener
-            tocinoWithoutEggCount--
-            binding.tocinoWithoutEggCountTextView.text = "$tocinoWithoutEggCount"
+        binding.tunasilogMinusButton.setOnClickListener {
+            if(tunasilogCount == 0) return@setOnClickListener
+            tunasilogCount--
+            binding.tunasilogCountTextView.text = "$tunasilogCount"
 
-            minusDisplayTotalAmount(tocinoWithoutEggPrice.toDouble())
+            minusDisplayTotalAmount(tunasilogPrice.toDouble())
         }
 
-        binding.chickenNuggetsMinusButton.setOnClickListener {
-            if(chickenNuggetsCount == 0) return@setOnClickListener
-            chickenNuggetsCount--
-            binding.chickenNuggetsCountTextView.text = "$chickenNuggetsCount"
+        binding.cornsilogMinusButton.setOnClickListener {
+            if(cornsilogCount == 0) return@setOnClickListener
+            cornsilogCount--
+            binding.cornsilogCountTextView.text = "$cornsilogCount"
 
-            minusDisplayTotalAmount(chickenNuggetsPrice.toDouble())
+            minusDisplayTotalAmount(cornsilogPrice.toDouble())
         }
 
-        binding.javaRiceMinusButton.setOnClickListener {
-            if(javaRiceCount == 0) return@setOnClickListener
-            javaRiceCount--
-            binding.javaRiceCountTextView.text = "$javaRiceCount"
+        binding.tapsilogMinusButton.setOnClickListener {
+            if(tapsilogCount == 0) return@setOnClickListener
+            tapsilogCount--
+            binding.tapsilogCountTextView.text = "$tapsilogCount"
 
-            minusDisplayTotalAmount(javaRicePrice.toDouble())
+            minusDisplayTotalAmount(tapsilogPrice.toDouble())
         }
 
-        binding.crispyBurgerMinusButton.setOnClickListener {
-            if(crispyBurgerCount == 0) return@setOnClickListener
-            crispyBurgerCount--
-            binding.crispyBurgerCountTextView.text = "$crispyBurgerCount"
+        binding.hamsilogMinusButton.setOnClickListener {
+            if(hamsilogCount == 0) return@setOnClickListener
+            hamsilogCount--
+            binding.hamsilogCountTextView.text = "$hamsilogCount"
 
-            minusDisplayTotalAmount(crispyBurgerPrice.toDouble())
+            minusDisplayTotalAmount(hamsilogPrice.toDouble())
         }
 
         //DRINKS
 
-        binding.c2SmallMinusButton.setOnClickListener {
-            if(c2SmallCount == 0) return@setOnClickListener
-            c2SmallCount--
-            binding.c2SmallCountTextView.text = "$c2SmallCount"
+        binding.miloRegularMinusButton.setOnClickListener {
+            if(miloRegularCount == 0) return@setOnClickListener
+            miloRegularCount--
+            binding.miloRegularCountTextView.text = "$miloRegularCount"
 
-            minusDisplayTotalAmount(c2SmallPrice.toDouble())
+            minusDisplayTotalAmount(miloRegularPrice.toDouble())
         }
 
-        binding.c2MediumMinusButton.setOnClickListener {
-            if(c2MediumCount == 0) return@setOnClickListener
-            c2MediumCount--
-            binding.c2MediumCountTextView.text = "$c2MediumCount"
+        binding.miloLargeMinusButton.setOnClickListener {
+            if(miloLargeCount == 0) return@setOnClickListener
+            miloLargeCount--
+            binding.miloLargeCountTextView.text = "$miloLargeCount"
 
-            minusDisplayTotalAmount(c2MediumPrice.toDouble())
+            minusDisplayTotalAmount(miloLargePrice.toDouble())
         }
 
-        binding.gulamanMinusButton.setOnClickListener {
-            if(gulamanSmallCount == 0) return@setOnClickListener
-            gulamanSmallCount--
-            binding.gulamanCountTextView.text = "$gulamanSmallCount"
+        binding.blueLemonadeSmallMinusButton.setOnClickListener {
+            if(blueLemonadeSmallCount == 0) return@setOnClickListener
+            blueLemonadeSmallCount--
+            binding.blueLemonadeSmallCountTextView.text = "$blueLemonadeSmallCount"
 
-            minusDisplayTotalAmount(gulamanSmallPrice.toDouble())
+            minusDisplayTotalAmount(blueLemonadeSmallPrice.toDouble())
         }
 
         binding.gulamanMediumMinusButton.setOnClickListener {
@@ -531,20 +533,20 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(gulamanMediumPrice.toDouble())
         }
 
-        binding.coffeeJellySmallMinusButton.setOnClickListener {
-            if(coffeeJellySmallCount == 0) return@setOnClickListener
-            coffeeJellySmallCount--
-            binding.coffeeJellySmallCountTextView.text = "$coffeeJellySmallCount"
+        binding.blueLemonadeMediumMinusButton.setOnClickListener {
+            if(blueLemonadeMediumCount == 0) return@setOnClickListener
+            blueLemonadeMediumCount--
+            binding.blueLemonadeMediumCountTextView.text = "$blueLemonadeMediumCount"
 
-            minusDisplayTotalAmount(coffeeJellySmallPrice.toDouble())
+            minusDisplayTotalAmount(blueLemonadeMediumPrice.toDouble())
         }
 
-        binding.coffeeJellyMediumMinusButton.setOnClickListener {
-            if(coffeeJellyMediumCount == 0) return@setOnClickListener
-            coffeeJellyMediumCount--
-            binding.coffeeJellyMediumCountTextView.text = "$coffeeJellyMediumCount"
+        binding.blueLemonadeLargeMinusButton.setOnClickListener {
+            if(blueLemonadeLargeCount == 0) return@setOnClickListener
+            blueLemonadeLargeCount--
+            binding.blueLemonadeLargeCountTextView.text = "$blueLemonadeLargeCount"
 
-            minusDisplayTotalAmount(coffeeJellyMediumPrice.toDouble())
+            minusDisplayTotalAmount(blueLemonadeLargePrice.toDouble())
         }
 
         binding.mangoTapiocaSmallMinusButton.setOnClickListener {
@@ -579,12 +581,12 @@ class OrderListViewActivity : AppCompatActivity() {
             minusDisplayTotalAmount(natureSpringMediumPrice.toDouble())
         }
 
-        binding.iceCoffeeMinusButton.setOnClickListener {
-            if(icedCoffeeCount == 0) return@setOnClickListener
-            icedCoffeeCount--
-            binding.iceCoffeeCountTextView.text = "$icedCoffeeCount"
+        binding.nescafeRegularMinusButton.setOnClickListener {
+            if(nescafeRegularCount == 0) return@setOnClickListener
+            nescafeRegularCount--
+            binding.nescafeRegularCountTextView.text = "$nescafeRegularCount"
 
-            minusDisplayTotalAmount(icedCoffeePrice.toDouble())
+            minusDisplayTotalAmount(nescafeRegularPrice.toDouble())
         }
 
         binding.icedTeaSmallMinusButton.setOnClickListener {
@@ -684,37 +686,37 @@ class OrderListViewActivity : AppCompatActivity() {
         binding.checkoutImageButton.setOnClickListener {
             val itemCountArray = mutableListOf<Int>()
             val itemNameArray = mutableListOf<String>()
-
+//ricemeal
             itemCountArray.add(sisilogCount)
             itemCountArray.add(steamedFriedRiceCount)
             itemCountArray.add(porkchopCount)
-            itemCountArray.add(burgerSteakCount)
-            itemCountArray.add(chickenStripsCount)
+            itemCountArray.add(chickenFilletCount)
+            itemCountArray.add(porkKatsudonCount)
             itemCountArray.add(siomaiRiceCount)
-            itemCountArray.add(lumpiaCount)
-            itemCountArray.add(bbqRiceCount)
+            itemCountArray.add(crispyChickenCount)
+            itemCountArray.add(longsilogCount)
             itemCountArray.add(tocinoWithEggCount)
-            itemCountArray.add(tocinoWithoutEggCount)
-            itemCountArray.add(chickenNuggetsCount)
-            itemCountArray.add(javaRiceCount)
-            itemCountArray.add(crispyBurgerCount)
-
-            itemCountArray.add(c2SmallCount)
-            itemCountArray.add(c2MediumCount)
-            itemCountArray.add(gulamanSmallCount)
+            itemCountArray.add(tunasilogCount)
+            itemCountArray.add(cornsilogCount)
+            itemCountArray.add(tapsilogCount)
+            itemCountArray.add(hamsilogCount)
+//drinks
+            itemCountArray.add(miloRegularCount)
+            itemCountArray.add(miloLargeCount)
+            itemCountArray.add(blueLemonadeSmallCount)
             itemCountArray.add(gulamanMediumCount)
-            itemCountArray.add(coffeeJellySmallCount)
-            itemCountArray.add(coffeeJellyMediumCount)
+            itemCountArray.add(blueLemonadeMediumCount)
+            itemCountArray.add(blueLemonadeLargeCount)
             itemCountArray.add(mangoTapiocaSmallCount)
             itemCountArray.add(mangoTapiocaMediumCount)
             itemCountArray.add(natureSpringSmallCount)
             itemCountArray.add(natureSpringMediumCount)
-            itemCountArray.add(icedCoffeeCount)
+            itemCountArray.add(nescafeRegularCount)
             itemCountArray.add(icedTeaCount)
             itemCountArray.add(vitamilkOriginalCount)
             itemCountArray.add(vitamilkChocolateCount)
             itemCountArray.add(vitamilkStrawberryCount)
-
+//snacks
             itemCountArray.add(luncheonMeatCount)
             itemCountArray.add(nuggetsCount)
             itemCountArray.add(kwekKwekCount)
@@ -726,28 +728,28 @@ class OrderListViewActivity : AppCompatActivity() {
             itemNameArray.add(sisilogName)
             itemNameArray.add(steamedFriedRiceName)
             itemNameArray.add(porkchopName)
-            itemNameArray.add(burgerSteakName)
-            itemNameArray.add(chickenStripsName)
+            itemNameArray.add(chickenFilletName)
+            itemNameArray.add(porkKatsudonName)
             itemNameArray.add(siomaiName)
-            itemNameArray.add(lumpiaName)
-            itemNameArray.add(bbqRiceName)
+            itemNameArray.add(crispyChickenName)
+            itemNameArray.add(longsilogName)
             itemNameArray.add(tocinoWithEggName)
-            itemNameArray.add(tocinoWithoutEggName)
-            itemNameArray.add(chickenNuggetsName)
-            itemNameArray.add(javaRiceName)
-            itemNameArray.add(crispyBurgerName)
+            itemNameArray.add(tunasilogName)
+            itemNameArray.add(cornsilogName)
+            itemNameArray.add(tapsilogName)
+            itemNameArray.add(hamsilogName)
 
-            itemNameArray.add(c2SmallName)
-            itemNameArray.add(c2MediumName)
-            itemNameArray.add(gulamanSmallName)
+            itemNameArray.add(miloRegularName)
+            itemNameArray.add(miloLargeName)
+            itemNameArray.add(blueLemonadeSmallName)
             itemNameArray.add(gulamanMediumName)
-            itemNameArray.add(coffeeJellySmallName)
+            itemNameArray.add(blueLemonadeMediumName)
             itemNameArray.add(coffeeJellyMediumName)
             itemNameArray.add(mangoTapiocaSmallName)
             itemNameArray.add(mangoTapiocaMediumName)
             itemNameArray.add(natureSpringSmallName)
             itemNameArray.add(natureSpringMediumName)
-            itemNameArray.add(icedCoffeeName)
+            itemNameArray.add(nescafeRegularName)
             itemNameArray.add(icedTeaName)
             itemNameArray.add(vitamilkOriginalName)
             itemNameArray.add(vitamilkChocolateName)

@@ -31,7 +31,7 @@
                 <ImageView
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:src="@drawable/landing_screen_image"
+                    android:src="@drawable/seller_card_image"
                     android:scaleType="centerCrop"/>
 
             </androidx.cardview.widget.CardView>
